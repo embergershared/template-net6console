@@ -36,6 +36,6 @@ It is a starting point.
 
 There are a lots of features and practices that can, and should, be added.
 
-I use `.NET 6 LTS` version, but it is a personal choice, not a recommendation.
+I use `.NET 6 LTS` version. It is a personal choice, not a recommendation.
 
-But this is a way better starting point than the default "Console App".
+This is a **WAY BETTER** starting point than the default "Console App".
