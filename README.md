@@ -22,7 +22,7 @@ The template lacks important and useful features:
 - [Dependency Injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) (for adaptive coding and unit test capabilities),
 - [Asynchronous programming](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/) (recommended to use with WebAPI REST calls and Cloud (Azure) resources).
 
-So I created this template that adds all these built-in.
+So I created this template that adds all of these built-in.
 
 It allows me to get started fast for all my coding Proof of Concepts.
 
