@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
+using ConsoleApp.Classes;
 using ConsoleApp.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Console = ConsoleApp.Classes.Console;
@@ -21,7 +22,7 @@ namespace ConsoleApp
 
             var console = host.Services.GetRequiredService<IConsole>();
             
-            await console.RunAsync();
+            _ = await console.RunAsync();
 
             //await host.RunAsync();
 
@@ -34,7 +35,8 @@ namespace ConsoleApp
                 .ConfigureServices((_, services) =>
                 {
                     services
-                        .AddTransient<IConsole, Console>();
+                        .AddTransient<IConsole, Console>()
+                        .AddTransient<IShowInfos, ShowInfos>();
                 })
                 .ConfigureLogging((_, logging) =>
                 {
