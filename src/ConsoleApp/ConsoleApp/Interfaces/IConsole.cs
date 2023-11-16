@@ -4,6 +4,6 @@ namespace ConsoleApp.Interfaces
 {
     internal interface IConsole
     {
-        Task RunAsync();
+        Task<bool> RunAsync();
     }
 }
